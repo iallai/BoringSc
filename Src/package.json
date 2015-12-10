@@ -4,9 +4,11 @@
   "description": "星际直播",
   "main": "app.js",
   "dependencies": {
-    "koa": "^1.1.2",
-    "orm":"^2.1.29",
-    "koa-route":"^2.4.2"
+    "hapi": "^11.1.2",
+    "hapi-react-views": "^5.0.1",
+    "orm": "^2.1.29",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3"
   },
   "devDependencies": {},
   "scripts": {
