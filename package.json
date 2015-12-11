@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "bower": "bower install",
-    "setup": "npm install && npm run bower",
+    "setup": "npm install",
     "start": "node api.js"
   },
   "repository": {

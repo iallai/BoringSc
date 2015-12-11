@@ -1,6 +1,6 @@
 {
   "name": "boring_sc_app",
-  "app_id": "",
+  "app_id": "bb5b1eef",
   "gulpStartupTasks": [
     "sass",
     "watch"
