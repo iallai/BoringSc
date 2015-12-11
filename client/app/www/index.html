@@ -16,6 +16,7 @@
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
+    <script src="http://mockjs.com/dist/mock.js"></script>
     <script src="common/app.js"></script>
     <script src="common/services.js"></script>
 
@@ -32,7 +33,16 @@
       <ion-content>
 
         <div ng-controller="articles.list">
+          <div class="list">
 
+            <a class="item item-thumbnail-left"  ng-repeat="item in models" href="#">
+              <img ng-src="{{item.thumb}}">
+              <h2 ng-bind="item.author"></h2>
+              <p ng-bind="item.title"></p>
+            </a>
+
+
+          </div>
         </div>
 
       </ion-content>

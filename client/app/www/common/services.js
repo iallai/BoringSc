@@ -75,6 +75,31 @@ app.factory('Comments', function ($http) {
   }
 });
 
+app.factory('TestData',function(){
 
+  var data =  Mock.mock({
+    'articles|1-12': [{
+      'title':'@title',
+      'id|+1': 1,
+      'publishTime': '@datetime',
+      'fav':'@integer(10,100)',
+      'author':'@name',
+      'thumb':'@dataImage("80x80")',
+      'type':'@integer(1,4)'
+    }]
+
+  });
+
+  return {
+
+    articles: function () {
+
+
+      return data.articles;
+    }
+
+  }
+
+})
 
 
