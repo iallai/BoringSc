@@ -86,12 +86,26 @@ app.factory('TestData',function(){
       'author':'@name',
       'thumb':'@dataImage("80x80")',
       'type':'@integer(1,4)'
-    }]
-
+    }],
+    'article': {
+      'title':'星际学院3.0',
+      'id': 1,
+      'publishTime': '@datetime',
+      'fav':'@integer(10,100)',
+      'author':'@name',
+      'thumb':'@dataImage("80x80")',
+      'type':'@integer(1,4)',
+      'detail':'@paragraph',
+      'video':'<iframe height=170 width=300 src="http://player.youku.com/embed/XMTQwODIzMzI3Ng==" frameborder=0 allowfullscreen></iframe>'
+    }
   });
 
   return {
+    article: function () {
 
+
+      return data.article;
+    },
     articles: function () {
 
 
