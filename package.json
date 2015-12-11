@@ -4,7 +4,9 @@
   "description": "for starcraftII beginner, show some video & replay",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bower": "bower install",
+    "setup": "npm install && npm run bower",
+    "start": "node api.js"
   },
   "repository": {
     "type": "git",
@@ -13,6 +15,7 @@
   "keywords": [
     "starcraft",
     "hapijs",
+    "ionic",
     "react",
     "angularjs"
   ],
@@ -21,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/iallai/BoringSc/issues"
   },
-  "homepage": "https://github.com/iallai/BoringSc"
+  "homepage": "https://github.com/iallai/BoringSc",
+  "dependencies": {
+    "hapi": "^11.1.2"
+  }
 }

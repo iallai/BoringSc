@@ -20,3 +20,7 @@
 - hapijs [hapijs](http://hapijs.com/)
 - 尼玛 懒得写了 自己看json好么
 ionic+node orm+nginx +mysql or mongodb
+
+###使用
+1. clone
+2. *npm run setup*
