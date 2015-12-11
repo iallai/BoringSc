@@ -15,4 +15,8 @@
 - Other **暴雪说要开一些api 坐等吧**
 
 ## 技术架构
+
+###API
+- hapijs [hapijs](http://hapijs.com/)
+- 尼玛 懒得写了 自己看json好么
 ionic+node orm+nginx +mysql or mongodb

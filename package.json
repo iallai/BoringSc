@@ -1,0 +1,25 @@
+{
+  "name": "boring_sc",
+  "version": "1.0.0",
+  "description": "for starcraftII beginner, show some video & replay",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iallai/BoringSc.git"
+  },
+  "keywords": [
+    "starcraft",
+    "hapijs",
+    "react",
+    "angularjs"
+  ],
+  "author": "iallai zhenshifei zhenshiguang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iallai/BoringSc/issues"
+  },
+  "homepage": "https://github.com/iallai/BoringSc"
+}
