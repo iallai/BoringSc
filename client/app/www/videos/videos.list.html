@@ -1,0 +1,16 @@
+<div class="list">
+
+  <a ui-sref="videos.detail({id:1})" class="item item-thumbnail-left"  ng-repeat="item in models" href="#">
+    <img ng-src="{{item.thumb}}">
+    <h2 ng-bind="item.title"></h2>
+    <!--<h3 ng-bind="item.author"></h3>-->
+
+    <p ng-bind="item.summry"></p>
+    <p ng-bind="item.summry"></p>
+
+    <p ng-bind="'发布时间:'+item.publishTime+' 评论:'+item.fav"></p>
+
+  </a>
+
+
+</div>

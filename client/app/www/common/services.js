@@ -85,7 +85,8 @@ app.factory('TestData',function(){
       'fav':'@integer(10,100)',
       'author':'@name',
       'thumb':'@dataImage("80x80")',
-      'type':'@integer(1,4)'
+      'type':'@integer(1,4)',
+      'summry':'@paragraph'
     }],
     'article': {
       'title':'星际学院3.0',

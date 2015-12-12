@@ -20,14 +20,17 @@ var app =angular.module('app', ['ionic'])
 
 if(window.location.hostname=='localhost'){
   window.$MY={
-    $URL:'http://localhost:8000'
+    $URL:'http://localhost:8000',
+
+    $VIEWURL:''
   };
 
 
 
 }else {
   window.$MY={
-    $URL:''
+    $URL:'',
+    $VIEWURL:''
   };
 }
 
