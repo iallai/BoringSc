@@ -3,6 +3,9 @@
  */
 'use strict';
 const Hapi = require('hapi');
+const apiRoute = require("./apiRoute");
+
+
 // Create a server with a host and port
 const server = new Hapi.Server();
 server.connection({
@@ -10,28 +13,14 @@ server.connection({
     port: 8000
 });
 
-// Add the route
-server.route({
-    method: 'GET',
-    path:'/api/articles',
-    handler: function (request, reply) {
+//路由
+server.route(apiRoute.route());
 
-        return reply('articles');
-    }
-});
-
-server.route({
-    method: 'GET',
-    path: '/{name}',
-    handler: function (request, reply) {
-        reply('api, ' + encodeURIComponent(request.params.name) + '!');
-    }
-});
+//server.route();
 // Start the server
 server.start((err) => {
-
     if (err) {
-    throw err;
-}
-console.log('Server running at:', server.info.uri);
+        throw err;
+    }
+    console.log('服务已运行在:', server.info.uri);
 });
