@@ -11,6 +11,8 @@ app.controller('articles.list', function ($rootScope,$scope,Articles,TestData) {
 app.controller('articles.detail', function ($rootScope,$scope,Articles,TestData,$sce) {
   Articles.get().success(function(){
 
+
+
   }).error(function(){
     $scope.model=TestData.article();
     $scope.model.video=$sce.trustAsHtml($scope.model.video)

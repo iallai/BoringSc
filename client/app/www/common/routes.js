@@ -10,20 +10,38 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     .state('videos', {
       abstract: true,
       url: '/videos',
-      template:"<ui-view></ui-view>"
+      templateUrl: window.$MY.$VIEWURL+"aside/menu.html"
+
     })
 
 
     .state('videos.list', {
       url: '',
-      controller:'videos.list',
-      templateUrl: window.$MY.$VIEWURL+"videos/videos.list.html"
+
+      views:{
+        'content':{
+          controller:'videos.list',
+          templateUrl: window.$MY.$VIEWURL+"videos/videos.list.html"
+
+        }
+
+
+      }
 
     })
     .state('videos.detail', {
       url: '/{id}',
-      controller:'videos.detail',
-      templateUrl: window.$MY.$VIEWURL+"videos/videos.detail.html"
+
+      views:{
+        'content':{
+          controller:'videos.detail',
+          templateUrl: window.$MY.$VIEWURL+"videos/videos.detail.html"
+
+        }
+
+
+      }
+
 
     })
 

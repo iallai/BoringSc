@@ -1,11 +1,13 @@
 /**
  * Created by iallai on 11/12/2015.
  */
-app.controller('videos.list', function ($rootScope,$scope,Articles,TestData) {
+app.controller('videos.list', function ($rootScope,$scope,Articles,TestData,$ionicSideMenuDelegate) {
   Articles.query().success(function(){
   }).error(function(){
     $scope.models=TestData.articles();
   });
+
+  //$ionicSideMenuDelegate.toggleLeft();
 });
 app.controller('videos.detail', function ($rootScope,$scope,Articles,TestData,$sce) {
   Articles.get().success(function(){
