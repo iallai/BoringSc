@@ -4,7 +4,8 @@
  */
 
 //引用各种controllers
-let articleCtrl=require("./controllers/articleCtrl");
+var articleCtrl=require("./controllers/articleCtrl");
+console.dir(articleCtrl);
 
 
 exports.route = function () {

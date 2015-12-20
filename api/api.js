@@ -4,6 +4,8 @@
 'use strict';
 const Hapi = require('hapi');
 const apiRoute = require("./apiRoute");
+const orm=require("orm");
+const model=require("./model");
 
 
 // Create a server with a host and port

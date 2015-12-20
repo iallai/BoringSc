@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "hapi": "^11.1.2"
+    "hapi": "^11.1.2",
+    "mongodb": "^2.0.52",
+    "orm": "^2.1.29"
   }
 }
