@@ -3,6 +3,7 @@ const $connStr="mongodb://127.0.0.1/BoringSrc";
 
 const $article=require("./models/article.js");
 
+
 /**
  * 初始化模型
  */
@@ -15,6 +16,7 @@ module.exports=(function(){
             res();
         });
     }).then(()=>{
+        console.log("db connection OK!");
         return model;
     });
     return model;
