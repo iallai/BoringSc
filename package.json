@@ -6,7 +6,7 @@
   "scripts": {
     "bower": "bower install",
     "setup": "npm install",
-    "start": "node api.js"
+    "start": "node api/api.js"
   },
   "repository": {
     "type": "git",

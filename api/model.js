@@ -1,5 +1,5 @@
-const orm=require("orm");
-const $connStr="mongodb://127.0.0.1/BoringSrc";
+//const orm=require("orm");
+//const $connStr="mongodb://127.0.0.1/BoringSrc";
 
 const $article=require("./models/article.js");
 
