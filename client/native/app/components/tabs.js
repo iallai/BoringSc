@@ -5,6 +5,7 @@ import React from 'react-native';
 import styles from '../styles/main';
 import icons from '../assets/icons';
 import Videos from './videos';
+import Scroll from './scroll';
 
 var {
     TabBarIOS,
@@ -68,16 +69,14 @@ class Tabs extends React.Component{
                     </TabBarIOS.Item>
                     <TabBarIOS.Item
                         icon={{uri: icons.user, scale: 3.3}}
-                        title="我的"
+                        title="Scroll测试"
                         selected={this.state.selectedTab === 'user'}
                         onPress={() => {
             this.setState({
               selectedTab: 'user'
             });
           }}>
-                        <View style={styles.body}>
-                            <Text>我的</Text>
-                        </View>
+                       <Scroll></Scroll>
                     </TabBarIOS.Item>
 
                 </TabBarIOS>
