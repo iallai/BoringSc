@@ -23,7 +23,7 @@ class Videos extends React.Component{
 
         return (
             <View style={styles.body}>
-                <Text>视频列表</Text>
+                <Text>视频</Text>
             </View>
 
         );
