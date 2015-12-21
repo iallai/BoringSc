@@ -17,6 +17,7 @@
 ## 技术架构
 ###Docker
 - docker大法好 我加进来了
+-http://doc.okbase.net/vikings-blog/archive/124865.html
 ###API
 - hapijs [hapijs](http://hapijs.com/)
 - 尼玛 懒得写了 自己看json好么
