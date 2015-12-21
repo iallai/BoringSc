@@ -4,10 +4,11 @@
 import React from 'react-native';
 import styles from '../styles/main';
 import icons from '../assets/icons';
-import Videos from './videos';
+import Videos from   './videos';
+import Webview from './webview';
 import Scroll from './scroll';
 
-var {
+let {
     TabBarIOS,
     Text,
     View,
@@ -39,7 +40,9 @@ class Tabs extends React.Component{
                             });
                           }}>
                         <View style={styles.body}>
-                            <Text>Home</Text>
+                            <Text>webview测试用户:</Text>
+                            <Text>erdaye</Text>
+                            <Text>chd123123</Text>
                         </View>
                     </TabBarIOS.Item>
                     <TabBarIOS.Item
@@ -56,16 +59,14 @@ class Tabs extends React.Component{
                     </TabBarIOS.Item>
                     <TabBarIOS.Item
                         icon={{uri: icons.search, scale: 4.6}}
-                        title="搜索"
+                        title="Webview测试"
                         selected={this.state.selectedTab === 'search'}
                         onPress={() => {
             this.setState({
               selectedTab: 'search'
             });
           }}>
-                        <View style={styles.body}>
-                            <Text>搜索</Text>
-                        </View>
+                        <Webview></Webview>
                     </TabBarIOS.Item>
                     <TabBarIOS.Item
                         icon={{uri: icons.user, scale: 3.3}}
