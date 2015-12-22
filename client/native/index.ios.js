@@ -10,15 +10,24 @@ import Tabs from './app/components/tabs';
 
 let {
   AppRegistry,
-  Text,
-  View,
+
+  NavigatorIOS,
+
 } = React;
 class App extends React.Component{
 
   render(){
-    return(
-        <Tabs></Tabs>
-    )
+    return (
+        <NavigatorIOS
+            ref="nav"
+            style={{flex : 1,backgroundColor: '#000000'}}
+            tintColor='#dddddd'
+            barTintColor='#cccccc'
+            initialRoute={{
+              title: '星际学院',
+              component: Tabs,
+            }}/>
+    );
   }
 
 }

@@ -6,6 +6,8 @@ import styles from '../styles/main';
 import icons from '../assets/icons';
 import Videos from   './videos';
 import Webview from './webview';
+import WebviewDetail from './webviewDetail';
+
 import Scroll from './scroll';
 
 let {
@@ -46,16 +48,28 @@ class Tabs extends React.Component{
                         </View>
                     </TabBarIOS.Item>
                     <TabBarIOS.Item
-                        title="视频列表"
+                        title="视频列表1"
                         icon={{uri: icons.board, scale: 4.6}}
                         selectedIcon={{uri: icons.boardActive, scale: 4.6}}
-                        selected={this.state.selectedTab === 'listTab'}
+                        selected={this.state.selectedTab === 'listTab1'}
                         onPress={() => {
                             this.setState({
-                              selectedTab: 'listTab',
+                              selectedTab: 'listTab1',
                             });
                           }}>
-                    <Videos></Videos>
+                        <Videos></Videos>
+                    </TabBarIOS.Item>
+                    <TabBarIOS.Item
+                        title="视频列表2"
+                        icon={{uri: icons.board, scale: 4.6}}
+                        selectedIcon={{uri: icons.boardActive, scale: 4.6}}
+                        selected={this.state.selectedTab === 'listTab2'}
+                        onPress={() => {
+                            this.setState({
+                              selectedTab: 'listTab2',
+                            });
+                          }}>
+                        <WebviewDetail></WebviewDetail>
                     </TabBarIOS.Item>
                     <TabBarIOS.Item
                         icon={{uri: icons.search, scale: 4.6}}

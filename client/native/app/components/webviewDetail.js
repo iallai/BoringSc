@@ -1,44 +1,36 @@
 /**
  * Created by iallai on 21/12/2015.
  */
-
+/**
+ * Created by iallai on 21/12/2015.
+ */
 import React from 'react-native';
 import styles from '../styles/main';
-import WebviewDetail from './webviewDetail';
 
 
-let {
+var {
     TabBarIOS,
-    NavigatorIOS,
     Text,
     View,
     WebView
     } = React;
 
-class Webview extends React.Component{
+class WebviewDetail extends React.Component{
     constructor(props) {
         super(props);
-        this.pushWeb();
-    }
-    pushWeb(url){
-        console.log("push!!!",url)
-
 
     }
 
-    onNavigationStateChange(navState){
-        this.pushWeb(navState.url)
-    }
 
     render(){
-        let URL='http://www.paipaizhao.net/mb'
+        let URL='http://www.paipaizhao.net/mb/myfriend'
         return (
             <View style={styles.webView}>
 
                 <WebView style={styles.webView}
                     url={URL}
                     javaScriptEnabledAndroid={true}
-                         onNavigationStateChange={this.onNavigationStateChange.bind(this)}
+
                          scalesPageToFit={true}
                 />
 
@@ -51,4 +43,4 @@ class Webview extends React.Component{
 }
 
 
-export { Webview as default };
+export { WebviewDetail as default };

@@ -4,12 +4,14 @@
 import React from 'react-native';
 import styles from '../styles/main';
 
-
-var {
-    TabBarIOS,
+let {
     Text,
     View,
-    } = React;
+    Image,
+    ListView,
+    ActivityIndicatorIOS,
+    TouchableHighlight,
+} = React;
 
 
 class Videos extends React.Component{
