@@ -23,9 +23,20 @@ class Tabs extends React.Component{
         this.state = {
             selectedTab: 'homeTab'
         };
+
     }
 
+    push(){
 
+        this.props.navigator.push({
+
+            title: '视频',
+            component: Videos,
+            passProps: {
+
+            }
+        })
+    }
      render(){
 
              return (
@@ -53,11 +64,9 @@ class Tabs extends React.Component{
                         selectedIcon={{uri: icons.boardActive, scale: 4.6}}
                         selected={this.state.selectedTab === 'listTab1'}
                         onPress={() => {
-                            this.setState({
-                              selectedTab: 'listTab1',
-                            });
+                           this.push()
                           }}>
-                        <Videos></Videos>
+
                     </TabBarIOS.Item>
                     <TabBarIOS.Item
                         title="视频列表2"
